@@ -47,9 +47,9 @@
   		
   		//Impossible Date or Invalid Date
   		var date = moment(text, 'YYYY-MM-DD');
-      // if(date.format('YYYY-M-D') != text){
-      //   return null;
-      // } 
+  		if(date.format('YYYY-M-D') != text && date.format('YYYY-MM-DD') != text){
+  		  return null;
+  		}
   		
       return new chrono.ParseResult({
         referenceDate:ref,
